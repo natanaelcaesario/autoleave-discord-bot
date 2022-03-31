@@ -5,6 +5,7 @@ client = discord.Client()
 token = "" # Buat token disini
 prefix = "#"
 command = "leave"
+length = len(client.guilds)
 
 @client.event
 async def on_ready():
@@ -18,12 +19,14 @@ async def on_message(message):
         await message.delete()
         for guild in client.guilds:
             print("Delete channel" + guild.name)
-            count = count +1;
             try:
                 await guild.leave()
+                count = count +1;
             except:
-                await guild.delete()
-        print("Total Channel Dihapus " + count)
+                pass
+            if(count == length):
+                print("You left total: " + count)
+
         
 client.run(token, bot=False)
 input("Press enter to exit") 

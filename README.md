@@ -2,20 +2,18 @@
 
 Allow you to automatically leave group discord
 
-# Requirement
+## Requirement
 
-discord
-asyncio
-python3
+*asyncio
+*discord
+\*python3
 
-# Tutorial
+## Tutorial
 
 A discord tool, to leave groups automatically!
 
 1. Download zip
-2. buat discord token
-3. buat token pada script yang dikomentasi
-4. jalankan script
-5. tuliskan perintah didalam chating manapun discord
-
-Special shoutout to Holder#6681 for meme.png
+2. Get your discord token
+3. put your token on the script
+4. run the script
+5. write your command on any channel
